@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Anton&family=Architects+Daughter&family=Asap+Condensed&family=Caveat:wght@400;500&family=Cinzel:wght@500&family=Cormorant+Garamond:wght@600&family=EB+Garamond&family=Josefin+Sans:wght@200&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@300&family=Oswald:wght@200&family=Overpass:wght@200&family=PT+Sans+Narrow&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300&family=Space+Grotesk&family=Water+Brush&family=Yanone+Kaffeesatz:wght@300&family=Zen+Antique&family=Zen+Kurenaido&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.1rem;
+}
+
+body {
+    background-image: url("Back1.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#theme {
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
+
+#class {
+    position: relative;
+}
+
+.moon {
+    background: url("moon1.png");
+}
+
+.dark-mode {
+    background: url("star.gif");
+    color: white;
+}
+
+.cir1 {
+    background: white;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    border-radius: 50%;
+    margin: 10px -240px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px auto;
+    width: 24px;
+    height: 2px;
+    background: rgb(214, 23, 71);
+    transform: rotate(0);
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
