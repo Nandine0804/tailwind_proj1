@@ -22,6 +22,12 @@ body {
     cursor: pointer;
 }
 
+#menu{
+    background-color:rgb(75, 77, 215);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .footer {
     background-color: whitesmoke;
